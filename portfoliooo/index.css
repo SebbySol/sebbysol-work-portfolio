@@ -93,43 +93,62 @@ body {
         color: var(--snow-white);
     }
 
-    #about{
+
+    /* About - 1. Discover section  */
+    #about {
         background-color: #FF5500;
-        padding: 160px 75px 200px 75px
+        padding: 20vh 75px 20vh 75px;
+        /* REQUIRED: This keeps the button from flying outside the orange box */
+        position: relative; 
     }
 
-    #about .about-discover h1{
-        font-size: 4vw;
-        font-weight: 600;
-        color: black;
-        margin-right: 265px;
-        display: inline-block;
-    }
-
-    #about button{
+    .discover-button {
         background-color: black;
         color: white;
-        padding: .5vw 3.5vw;
-        margin-top: 15px;
+        padding: 2vh 3.5vw;
+        font-size: 20px;
         border: none;
         display: inline-block;
         border-radius: 50px 20px 20px 50px;
+        
+        /* POSITIONING LOGIC */
         position: absolute;
+        right: 80px; 
+        top: 22vh; 
+        
+        transition: all 0.3s ease;
+        cursor: pointer;
     }
 
-    #about .about-discover p{
+    .discover-button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    #about .about-discover h1 {
+        font-size: 4vw;
+        font-weight: 600;
+        color: black;
+        display: inline-block;
+    }
+
+    #about .about-discover p {
         font-size: 2vw;
         color: white;
         margin-top: 15vh;
         line-height: 35px;
-        margin-right: 42vw;
+
+        /* creates a space on the right sides so the text doesn't hit the button */
+        margin-right: 42vw; 
         margin-bottom: 200px;
         font-weight: 200;
     }
 
+    /* About - 2. About Me section */
+
     #about img {
         width: 35vw;
-        height: 100vh;
+        height: 80vh;
         border: 10px solid black;
         border-radius: 35px;
         object-fit: cover; 
@@ -156,12 +175,10 @@ body {
 
     #about .custom-line {
         width: 50%;
-        border: none;
+        border: none; 
         height: 3px;
-        text-align: right;
-        background-color: black; 
+        background-color: rgb(255, 255, 255); 
         border-radius: 10px;
-        margin-left: 44vw;
         opacity: 1;
     }
     #about .about-me p{
@@ -229,7 +246,7 @@ body {
         padding: 100px 75px 200px 75px;
         overflow: auto;
     }
-    
+
     .tech-content {
         position: relative;
         z-index: 2;
@@ -241,6 +258,7 @@ body {
     .tech-skills h1 {
         font-size: 5vw;
         font-weight: 600;
+        letter-spacing: -3%;
         color: var(--pongkan-orange);
     }
 
