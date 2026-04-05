@@ -221,35 +221,16 @@ body {
         position: relative;
         min-height: 100vh;
         width: 100%;
-        padding: 50px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.905), rgba(0, 0, 0, 0.733)), url(./img/grainy-bg.jpg);       
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 100px 75px 200px 75px;
+        overflow: auto;
     }
 
-    .bg-video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 0;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-        pointer-events: none;
-    }
-
-    .tech-skills::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.473);
-        z-index: 1;
-    }
+    .tech-skills
 
     .tech-content {
         position: relative;
@@ -261,8 +242,8 @@ body {
 
     .tech-skills h1 {
         font-size: 5vw;
-        font-weight: 500;
-        color: var(--dandelion-orange);
+        font-weight: 600;
+        color: var(--pongkan-orange);
     }
 
     ol, ul {
