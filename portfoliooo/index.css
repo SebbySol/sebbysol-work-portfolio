@@ -148,7 +148,7 @@ body {
 
     #about img {
         width: 35vw;
-        height: 80vh;
+        height: 700px;
         border: 10px solid black;
         border-radius: 35px;
         object-fit: cover; 
@@ -174,10 +174,10 @@ body {
     }
 
     #about .custom-line {
-        width: 50%;
-        border: none; 
-        height: 3px;
-        background-color: rgb(255, 255, 255); 
+        height: 2px;
+        width: 53%;
+        margin-left: 47%;
+        background-color: white; 
         border-radius: 10px;
         opacity: 1;
     }
@@ -191,49 +191,6 @@ body {
         font-weight: 200;
     }
 
-    #about .hidden-buttons{
-        display: block;
-    }
-
-    /* HIDDEN BUTTONS */
-    #hidden-buttons{
-        padding: 2vw 5vw;
-        background-color: black;
-    }
-
-    #hidden-buttons a{
-        color: white;
-        font-size: 2vw;
-        font-weight: 400;
-        padding: 10px 0px 10px 10px;
-        text-transform: uppercase;
-        line-height: 10vh;
-        text-decoration: none;
-    }
-
-    #hidden-buttons a:hover{
-        color: black;
-        font-size: 2vw;
-        font-weight: 400;
-        background-color: #dcfbff;
-        transition: all 0.3s ease-in-out;
-        padding-right: 81.5vw;
-        text-transform: uppercase;
-        line-height: 10vh;
-        border-radius: 10px 10px 10px 10px;
-        text-decoration: none;
-    }
-
-    #hidden-buttons .line-skills{
-        opacity: 1;
-        color: white;
-        height: .1px;
-    }
-
-    /* HIDDEN BUTTONS - 1. SKILL SECTION */
-
-
-
     .tech-skills {
         position: relative;
         min-height: 100vh;
@@ -243,7 +200,7 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        padding: 100px 75px 200px 75px;
+        padding: 30px 75px 200px 75px;
         overflow: auto;
     }
 
@@ -257,9 +214,28 @@ body {
 
     .tech-skills h1 {
         font-size: 5vw;
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: -3%;
-        color: var(--pongkan-orange);
+        margin-top: 15vh;
+        color: white;
+    }
+
+    #tech-skills .line-skills{
+        opacity: 1;
+        color: white;
+        padding-top: 5px;
+        height: 3px;
+        border: none;
+        background: white;
+    }
+
+    .project-container{
+        width: 150px;
+    }
+    .project-container h4{
+        font-size: 2vw;
+        font-weight: 300;
+        color: white;
     }
 
     ol, ul {
@@ -269,7 +245,6 @@ body {
     .tech-skills ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 30px;
         list-style: none;
         margin-top: 5vh;
@@ -321,9 +296,15 @@ body {
         margin-top: 5vh;
     }
 
+    #about .hidden-buttons{
+        display: block;
+    }
+
+    
+    /* footer section */
     footer {
         background-color: black;
-        padding: 0px 50px 30px 50px;
+        padding: 50px 50px 30px 50px;
         color: white;
         text-align: center;
     }
