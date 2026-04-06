@@ -229,13 +229,12 @@ body {
         background: white;
     }
 
-    .project-container{
-        width: 150px;
+    .card img{
+        border-radius: 10px;
     }
-    .project-container h4{
-        font-size: 2vw;
-        font-weight: 300;
-        color: white;
+
+    .card h4{
+        margin-top: 20px;
     }
 
     ol, ul {
