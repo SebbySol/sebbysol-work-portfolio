@@ -250,7 +250,7 @@ body {
     }
 
     .card {
-        width: 350px;
+        width: calc(25% - 23px);
         padding: 30px;
         border-radius: 20px;
         text-align: left;
